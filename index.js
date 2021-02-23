@@ -13,7 +13,7 @@ function displayResults(responseJson) {
     let html = '';
     let num = $('input[type="number"]').val();
     for (let i=0; i<responseJson.message.length; i++) {
-      html += `<img src="${responseJson.message[i]}" />`
+      html += `<img src="${responseJson.message[i]}" class="dog-image" />`
     }
     $('.results-img').html(html)
     $('.results h2').html(`Now showing you ${num} doggos.`);
